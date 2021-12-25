@@ -17,7 +17,7 @@ public class AnimallAopAdvice {
         long startTime = System.currentTimeMillis();
         Object myPjp = proceedingJoinPoint.proceed();
         long endTime = System.currentTimeMillis();
-        log.info(proceedingJoinPoint.getSignature().getName() + " method execution time is: " + (endTime - startTime));
+        log.info(proceedingJoinPoint.getSignature().getName() + " method execution time is: " + (endTime - startTime) + " milliSeconds");
 
         return myPjp;
     }
